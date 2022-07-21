@@ -2,7 +2,7 @@
 	<div class="font-weight-bold text-h4 text-center">
 		Problems with Traditional Dustbin
 	</div>
-	<v-carousel cycles hide-delimiters show-arrows="hover" class="mt-3">
+	<v-carousel cycle hide-delimiters show-arrows="hover" class="mt-3">
 		<v-carousel-item v-for="item in problems" :key="item">
 			<div class="font-weight-bold text-h6 text-tertiary text-center">{{ item.title }}</div>
 			<v-img :src="item.src" cover></v-img>
