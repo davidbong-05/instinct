@@ -1,6 +1,6 @@
 <template>
 	<v-container>
-		<h2 class="text-tertiary mb-2">Our Contact</h2>
+		<h2 class="mb-2">Our Contact</h2>
 		<v-card
 			v-for="member in members"
 			class="mb-4"
@@ -14,9 +14,9 @@
 						<v-img :src="member.image" style="border-radius: 50%"></v-img>
 					</v-col>
 					<v-col cols="9">
-						<div class="text-h6">{{ member.name }}</div>
-						<div class="text-subtitle-2">{{ member.faculty }}</div>
-						<div class="text-subtitle-2">{{ member.major }}</div>
+						<div class="text-h6 text-tertiary">{{ member.name }}</div>
+						<div class="text-subtitle-2 text-info">{{ member.faculty }}</div>
+						<div class="text-subtitle-2 text-info">{{ member.major }}</div>
 						<div>
 							<a :href="'mailto:' + member.email">{{ member.email }}</a>
 						</div>
@@ -24,7 +24,7 @@
 				</v-row>
 			</v-card-item>
 		</v-card>
-		<h2 class="text-tertiary mb-2">Our Mentor's Contact</h2>
+		<h2 class="mb-2">Our Mentor's Contact</h2>
 		<v-card class="mb-4" color="#C5E0B4" :image="bgImg" flat>
 			<v-card-item>
 				<v-row>
@@ -32,7 +32,7 @@
 						<v-img :src="mentor.image" style="border-radius: 50%"></v-img>
 					</v-col>
 					<v-col cols="9">
-						<div class="text-h6">{{ mentor.name }}</div>
+						<div class="text-h6 text-tertiary">{{ mentor.name }}</div>
 						<div>
 							<div class="text-subtitle-2">{{ mentor.faculty }}</div>
 							<a :href="'mailto:' + mentor.email">{{ mentor.email }}</a>

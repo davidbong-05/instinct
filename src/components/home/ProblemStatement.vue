@@ -13,7 +13,7 @@
 				class="py-0"
 				density="compact"
 				>
-					<div class="text-subtitle-2 text-primary">{{text}}</div>
+					<div class="text-subtitle-2 text-info">{{text}}</div>
 				</v-list-item>
 			</v-list>
 		</v-carousel-item>

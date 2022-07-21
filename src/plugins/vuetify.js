@@ -16,7 +16,7 @@ export default createVuetify({
 					tertiary: "#4B6F44",
 					accent: "#82B1FF",
 					error: "#FF5252",
-					info: "#2196F3",
+					info: "#607D3B",
 					success: "#4CAF50",
 					warning: "#FFC107",
 					background: "#C5E0B4",
