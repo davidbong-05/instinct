@@ -1,11 +1,15 @@
 <template>
 	<v-container>
-	HI
+		<ProblemStatement />
 	</v-container>
 </template>
 
 <script>
+	import ProblemStatement from '@/components/home/ProblemStatement.vue'
 	export default {
-		name: "Home",			
+		name: "Home",	
+		components: {
+			ProblemStatement,
+		},
 	};
 </script>

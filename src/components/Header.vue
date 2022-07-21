@@ -35,7 +35,7 @@
 					link: "/",
 				},
 				{
-					text: "Prototype",
+					text: "Prototype Demo",
 					icon: "mdi-rocket-launch-outline",
 					link: "/prototype",
 				},
