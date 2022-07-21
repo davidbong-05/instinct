@@ -46,7 +46,7 @@
 
 <script>
 	export default {
-		name: "About",
+		name: "Contact",
 		data() {
 			return {
 				bgImg: require("../assets/bg-img.png"),
