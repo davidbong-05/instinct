@@ -11,12 +11,11 @@
 			<v-list-item
 				v-for="item in items"
 				:key="item"
-				:value="item.link"
 				active-color="primary"
 				:to="item.link"
 			>
 				<v-list-item-icon :icon="item.icon" class="me-2" color="tertiary"></v-list-item-icon>
-				<v-list-item-title v-text="item.text" color="tertiary"></v-list-item-title>
+				<v-list-item-title  class="text-tertiary">{{ item.text }}</v-list-item-title>
 			</v-list-item>
 		</v-list>
 	</v-navigation-drawer>
