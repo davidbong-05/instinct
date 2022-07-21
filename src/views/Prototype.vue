@@ -1,7 +1,7 @@
 <template>
 	<v-card color="transparent">
 		<v-card-title class="text-center justify-center py-6">
-			<h1 class="font-weight-bold text-h3 text-tertiary">Smart Dustbin</h1>
+			<h1 class="font-weight-bold text-h3 text-tertiary">Smart Dustbin Demo</h1>
 		</v-card-title>
 
 		<v-tabs v-model="tab" background-color="transparent" grow>
@@ -17,7 +17,7 @@
 
 		<v-window v-model="tab">
 			<v-window-item v-for="item in items" :key="item" :value="item">
-				<v-card color="secondary" class="d-flex justify-center pa-3" flat>
+				<v-card color="secondary" class="d-flex justify-center pa-3 mb-6" flat>
 					<iframe
 						:src="item.link"
                         width="100%"
