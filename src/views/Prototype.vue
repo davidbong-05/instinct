@@ -1,7 +1,7 @@
 <template>
 	<v-card color="transparent">
 		<v-card-title class="text-center justify-center py-6">
-			<div class="font-weight-bold text-h4 text-tertiary">Smart Dustbin Demo</div>
+			<div class="font-weight-bold text-h4">Smart Dustbin Demo</div>
 		</v-card-title>
 
 		<v-tabs v-model="tab" background-color="transparent" grow>
