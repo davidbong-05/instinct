@@ -25,10 +25,10 @@
 <script>
 	export default {
 		name: "Header",
-
 		data() {
-			const drawer = false;
-			const items = [
+			return {
+				drawer: false,
+				items: [
 				{
 					text: "Home",
 					icon: "mdi-home",
@@ -53,11 +53,7 @@
 					text: "Contact",
 					icon: "mdi-contacts-outline",
 					link: "/contact",
-				},
-			];
-			return {
-				drawer,
-				items,
+				},]
 			};
 		},
 	};
