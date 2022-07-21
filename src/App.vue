@@ -1,23 +1,21 @@
-<template>
+<template>   
   <v-app>
     <v-main>
-      <HelloWorld/>
+      <Header />
+      <router-view></router-view>
+      <Footer />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 export default {
   name: 'App',
-
   components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
+    Header,
+    Footer
+}
 }
 </script>
