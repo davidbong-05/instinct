@@ -46,10 +46,10 @@
 					</code-editor>
 				</v-expansion-panel-text>
 			</v-expansion-panel>
-			<a href="https://www.tinkercad.com/things/hpLohqvoLMH-smart-dustbin/editel?sharecode=Qeso8LHAVkyD1jBszUFc0TVCKbiNKEF4llwStOIjfEs">
-				<v-btn color="tertiary" target="_blank">Visit Tinkercad</v-btn>
-			</a>
 		</v-expansion-panels>
+		<center>
+				<v-btn color="tertiary" class="mt-2" target="_blank" href="https://www.tinkercad.com/things/hpLohqvoLMH-smart-dustbin/editel?sharecode=Qeso8LHAVkyD1jBszUFc0TVCKbiNKEF4llwStOIjfEs">Visit Tinkercad</v-btn>
+		</center>
 	</v-container>
 </template>
 
