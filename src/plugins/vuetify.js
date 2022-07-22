@@ -13,7 +13,7 @@ export default createVuetify({
 				colors: {
 					primary: "#1A2421",
 					secondary: "#FFF2CC",
-					tertiary: "#4B6F44",
+					tertiary: "#358673",
 					accent: "#82B1FF",
 					error: "#FF5252",
 					info: "#607D3B",
