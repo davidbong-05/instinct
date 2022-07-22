@@ -23,8 +23,8 @@
 			<v-card-item>
 				<v-row class="d-flex align-center">
 					<v-col cols="9">
-						<div class="text-h6 text-secondary">{{ mentor.name }}</div>
-						<div class="text-subtitle-2">
+						<div class="text-h6">{{ mentor.name }}</div>
+						<div class="text-subtitle-2  text-secondary">
 							<div>{{ mentor.faculty }}</div>
 							<div>{{ mentor.role }}</div>
 							<a :href="'mailto:' + mentor.email">{{ mentor.email }}</a>
