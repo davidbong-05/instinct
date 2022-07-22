@@ -39,6 +39,11 @@
 					link: "/prototype",
 				},
 				{
+					text: "Do It Yourself",
+					icon: "mdi-creation",
+					link: "/diy",
+				},
+				{
 					text: "Resources",
 					icon: "mdi-download-outline",
 					link: "/resources",
