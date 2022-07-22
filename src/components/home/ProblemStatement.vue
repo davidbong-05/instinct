@@ -37,8 +37,15 @@
 						],
 					},
 					{
-						title: "Bad Dustbin Condition",
+						title: "Dustbin Are Always Overflowing​",
 						src: require("@/assets/problems/problem2.jpg"),
+						text: [
+							"Inconsistent trash volume making it is hard to maintain"
+						],
+					},
+					{
+						title: "Bad Dustbin Condition",
+						src: require("@/assets/problems/problem3.jpg"),
 						text: [
 							"Open lid and the smell of garbage will attract wild animal to scavenge and make a mess around the area"
 						],
