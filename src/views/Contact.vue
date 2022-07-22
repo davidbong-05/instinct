@@ -1,17 +1,11 @@
 <template>
 	<v-container>
 		<h2 class="mb-2">Our Contact</h2>
-		<v-card
-			v-for="member in members"
-			class="mb-4"
-			color="#C5E0B4"
-			:image="bgImg"
-			flat
-		>
+		<v-card v-for="member in members" class="mb-4" color="secondary" flat rounded>
 			<v-card-item>
-				<v-row>
+				<v-row class="d-flex align-center">
 					<v-col cols="3">
-						<v-img :src="member.image" style="border-radius: 50%"></v-img>
+						<v-img :src="member.image"></v-img>
 					</v-col>
 					<v-col cols="9">
 						<div class="text-h6 text-tertiary">{{ member.name }}</div>
@@ -25,18 +19,19 @@
 			</v-card-item>
 		</v-card>
 		<h2 class="mb-2">Our Mentor's Contact</h2>
-		<v-card class="mb-4" color="#C5E0B4" :image="bgImg" flat>
+		<v-card class="mb-4" color="tertiary" flat>
 			<v-card-item>
-				<v-row>
-					<v-col cols="3">
-						<v-img :src="mentor.image" style="border-radius: 50%"></v-img>
-					</v-col>
+				<v-row class="d-flex align-center">
 					<v-col cols="9">
-						<div class="text-h6 text-tertiary">{{ mentor.name }}</div>
-						<div>
-							<div class="text-subtitle-2">{{ mentor.faculty }}</div>
+						<div class="text-h6 text-secondary">{{ mentor.name }}</div>
+						<div class="text-subtitle-2">
+							<div>{{ mentor.faculty }}</div>
+							<div>{{ mentor.role }}</div>
 							<a :href="'mailto:' + mentor.email">{{ mentor.email }}</a>
 						</div>
+					</v-col>
+					<v-col cols="3">
+						<v-img :src="mentor.image"></v-img>
 					</v-col>
 				</v-row>
 			</v-card-item>
@@ -49,38 +44,37 @@
 		name: "Contact",
 		data() {
 			return {
-				bgImg: require("../assets/bg-img.png"),
 				mentor: {
-					name: "Dr. Suriati",
-					role: "",
-					image: "https://ui-avatars.com/api/?name=Suriati",
+					name: "Ts. Dr Suriati Khartini",
+					role: "Senior Lecturer",
+					image: require("../assets/mentor.png"),
 					faculty: "Faculty of Computer Science & Information Technology",
-					email: "Suriati@gmail.com",
+					email: "jskhartini@unimas.my",
 				},
 				members: [
 					{
 						name: "Connie Ong",
 						role: "",
-						image: "https://ui-avatars.com/api/?name=Connie+Ong",
+						image: require("../assets/connie.png"),
 						faculty: "Faculty of Economy & Business",
-						major: "Finance",
-						email: "connieong@gmail.com",
+						major: "Accounting",
+						email: "connie.0ng1999@gmail.com",
 					},
 					{
 						name: "David Bong",
 						role: "",
-						image: "https://ui-avatars.com/api/?name=David+Bong",
+						image: require("../assets/david.png"),
 						faculty: "Faculty of Computer Science & Information Technology",
 						major: "Software Engineering",
 						email: "davidbong05@gmail.com",
 					},
 					{
-						name: "Husna",
+						name: "Nur Husna Aqila",
 						role: "",
-						image: "https://ui-avatars.com/api/?name=Husna",
+						image: require("../assets/husna.png"),
 						faculty: "Faculty of Computer Science & Information Technology",
-						major: "Software Engineering",
-						email: "husna@gmail.com",
+						major: "Multimedia Computing",
+						email: "husnasahabudin97@gmail.com",
 					},
 				],
 			};
