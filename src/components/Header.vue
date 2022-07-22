@@ -55,7 +55,7 @@
 				},
 				{
 					text: "Contact",
-					icon: "mdi-contacts-outline",
+					icon: "mdi-smart-card-outline",
 					link: "/contact",
 				},]
 			};
