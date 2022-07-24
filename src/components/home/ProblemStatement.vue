@@ -5,7 +5,7 @@
 	<v-carousel cycle hide-delimiters show-arrows="hover" class="mt-3">
 		<v-carousel-item v-for="item in problems" :key="item">
 			<div class="font-weight-bold text-h6 text-tertiary text-center">{{ item.title }}</div>
-			<v-row>
+			<v-row class="align-center">
 				<v-col md="6" sm="6" cols="12">
 					<v-img :src="item.src"></v-img>
 				</v-col>
