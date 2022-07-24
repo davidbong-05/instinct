@@ -5,6 +5,12 @@
 		<ProblemStatement />
 		<v-divider class="my-4"></v-divider>
 		<MainFeatures />
+		<v-divider class="my-4"></v-divider>
+		<div class="font-weight-bold text-h6">Presented by:</div>
+		<div class="d-flex justify-center mt-2">
+		<v-img :src="require('../assets/logo-outlined.png')" height=80></v-img>
+		<v-img :src="require('../assets/unimas_logo.png')" height=80></v-img>
+		</div>
 	</v-container>
 </template>
 
