@@ -4,7 +4,6 @@ import About from "@/views/About.vue";
 import Contact from "@/views/Contact.vue";
 import Prototype from "@/views/Prototype.vue";
 import DoItYourself from "@/views/DoItYourself.vue"
-import Resources from "@/views/Resources.vue";
 
 const routes = [
   {
@@ -21,11 +20,6 @@ const routes = [
     path: "/diy",
     name: "DIY",
     component: DoItYourself,
-  },
-  {
-    path: "/resources",
-    name: "Resources",
-    component: Resources,
   },
   {
     path: "/about",

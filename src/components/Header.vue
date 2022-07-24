@@ -17,6 +17,13 @@
 				<v-list-item-icon :icon="item.icon" class="me-2" color="tertiary"></v-list-item-icon>
 				<v-list-item-title  class="text-tertiary">{{ item.text }}</v-list-item-title>
 			</v-list-item>
+			<v-list-item
+				:href="brochure.link"
+				download
+			>
+				<v-list-item-icon :icon="brochure.icon" class="me-2" color="tertiary"></v-list-item-icon>
+				<v-list-item-title  class="text-tertiary">{{ brochure.text }}</v-list-item-title>
+			</v-list-item>
 		</v-list>
 	</v-navigation-drawer>
 </template>
@@ -44,11 +51,6 @@
 					link: "/diy",
 				},
 				{
-					text: "Resources",
-					icon: "mdi-download-outline",
-					link: "/resources",
-				},
-				{
 					text: "About",
 					icon: "mdi-information-outline",
 					link: "/about",
@@ -57,7 +59,13 @@
 					text: "Contact",
 					icon: "mdi-smart-card-outline",
 					link: "/contact",
-				},]
+				},],
+				brochure:
+				{
+					text: "Smart Dustbin Brochure",
+					icon: "mdi-download-outline",
+					link: "/resources/smart_dustbin_brochure.pdf",
+				},
 			};
 		},
 	};
