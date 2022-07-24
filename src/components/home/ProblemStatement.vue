@@ -7,7 +7,7 @@
 			<div class="font-weight-bold text-h6 text-tertiary text-center">{{ item.title }}</div>
 			<v-row>
 				<v-col md="6" sm="6" cols="12">
-					<v-img :src="item.src" md="heights:10px"></v-img>
+					<v-img :src="item.src"></v-img>
 				</v-col>
 				<v-col md="6" sm="6" cols="12">
 					<v-list bg-color="secondary" rounded>
