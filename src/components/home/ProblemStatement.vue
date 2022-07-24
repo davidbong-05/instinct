@@ -9,7 +9,7 @@
 				<v-col md="6" sm="6" cols="12">
 					<v-img :src="item.src"></v-img>
 				</v-col>
-				<v-col md="6" sm="6" cols="12">
+				<v-col md="6" sm="6" cols="12" class="py-0">
 					<v-list bg-color="secondary" rounded>
 						<v-list-item
 						v-for="text in item.text"
