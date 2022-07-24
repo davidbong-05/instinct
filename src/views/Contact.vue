@@ -1,28 +1,33 @@
 <template>
 	<v-container>
 		<h2 class="mb-2">Our Contact</h2>
-		<v-card v-for="member in members" class="mb-4" color="secondary" flat rounded>
-			<v-card-item>
-				<v-row class="d-flex align-center">
-					<v-col cols="3">
-						<v-img :src="member.image"></v-img>
-					</v-col>
-					<v-col cols="9">
-						<div class="text-h6 text-tertiary">{{ member.name }}</div>
-						<div class="text-subtitle-2 text-info">{{ member.faculty }}</div>
-						<div class="text-subtitle-2 text-info">{{ member.major }}</div>
-						<div>
-							<a :href="'mailto:' + member.email">{{ member.email }}</a>
-						</div>
-					</v-col>
-				</v-row>
-			</v-card-item>
-		</v-card>
-		<h2 class="mb-2">Our Mentor's Contact</h2>
+		<v-row class="d-md-flex">
+			<v-col md="4" sm="4" cols="12" v-for="member in members" class="">
+				<v-card class="mb-4" color="secondary" flat rounded  height="100%">
+					<v-card-item>
+						<v-row class="d-flex align-center">
+							<v-col cols="3">
+								<v-img :src="member.image"></v-img>
+							</v-col>
+							<v-col cols="9">
+								<div class="text-h6 text-tertiary">{{ member.name }}</div>
+								<div class="text-subtitle-2 text-info">{{ member.faculty }}</div>
+								<div class="text-subtitle-2 text-info">{{ member.major }}</div>
+								<div>
+									<a class="text-decoration-none" :href="'mailto:' + member.email">{{ member.email }}</a>
+								</div>
+							</v-col>
+						</v-row>
+					</v-card-item>
+				</v-card>
+			</v-col>
+		</v-row>
+		<h2 class="my-2">Our Mentor's Contact</h2>
 		<v-card class="mb-4" color="tertiary" flat>
 			<v-card-item>
 				<v-row class="d-flex align-center">
-					<v-col cols="9">
+					<v-col md="1" sm="1" cols="0" class="py-0"></v-col>
+					<v-col md="7" sm="7" cols="9">
 						<div class="text-h6">{{ mentor.name }}</div>
 						<div class="text-subtitle-2  text-secondary">
 							<div>{{ mentor.faculty }}</div>
@@ -54,26 +59,23 @@
 				members: [
 					{
 						name: "Connie Ong",
-						role: "",
 						image: require("../assets/connie.png"),
 						faculty: "Faculty of Economy & Business",
-						major: "Accounting",
+						major: "Major in Accounting",
 						email: "connie.0ng1999@gmail.com",
 					},
 					{
 						name: "David Bong",
-						role: "",
 						image: require("../assets/david.png"),
 						faculty: "Faculty of Computer Science & Information Technology",
-						major: "Software Engineering",
+						major: "Major in Software Engineering",
 						email: "davidbong05@gmail.com",
 					},
 					{
 						name: "Nur Husna Aqila",
-						role: "",
 						image: require("../assets/husna.png"),
 						faculty: "Faculty of Computer Science & Information Technology",
-						major: "Multimedia Computing",
+						major: "Major in Multimedia Computing",
 						email: "husnasahabudin97@gmail.com",
 					},
 				],
