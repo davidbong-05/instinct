@@ -4,7 +4,7 @@
 		cycle
 		hide-delimiters
 		show-arrows="hover"
-		class="mt-3"
+		class="my-3"
 		height="auto"
 	>
 		<v-carousel-item>
