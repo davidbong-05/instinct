@@ -60,7 +60,7 @@
 					{
 						name: "Connie Ong",
 						image: require("../assets/connie.png"),
-						faculty: "Faculty of Economy & Business",
+						faculty: "Faculty of Economics & Business",
 						major: "Major in Accounting",
 						email: "connie.0ng1999@gmail.com",
 					},
