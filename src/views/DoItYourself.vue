@@ -52,6 +52,7 @@
 
 <script>
 	import CodeEditor from "simple-code-editor";
+	import code from "!raw-loader!../assets/code.txt";
 	export default {
 		name: "DoItYourself",
 		components: {
@@ -105,7 +106,7 @@
 						qty: 1
 					},
 				],
-				code: "Confidential!!!",
+				code,
 			};
 		},
 	};
